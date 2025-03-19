@@ -28,7 +28,9 @@ public interface UsuarioRepository extends JpaRepository<Usuario, UUID> {
 	 */
 	@Query("""
             select u from Usuario u
-            where u.email = :param1 and u.senha = :param2
+            join u.perfil p
+            where u.email = :param1
+            and u.senha = :param2
             """)
 	Usuario findByEmailSenha(
 			@Param("param1") String email, @Param("param2") String senha);
