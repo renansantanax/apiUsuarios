@@ -1,12 +1,12 @@
 # 🛉 API de Usuários - Spring Boot
 
-API RESTful desenvolvida com **Spring Boot** para realizar operações CRUD em um sistema de usuários. Este projeto faz parte de uma arquitetura modular e visa demonstrar boas práticas com Java, Spring e Docker.
+API REST desenvolvida com **Spring Boot** para realizar operações CRUD em um sistema de usuários. Este projeto faz parte de uma arquitetura modular e visa demonstrar boas práticas com Java, Spring e Docker.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Java 17**
+- **Java 21**
 - **Spring Boot 3+**
 - **Spring Data JPA**
 - **Docker & Docker Compose**
@@ -87,22 +87,6 @@ A API estará disponível em: `http://localhost:8080`
 - ⏳ Segurança com JWT (Spring Security)
 - ⏳ Testes unitários com JUnit/Mockito
 - ⏳ Integração com API Gateway (em arquitetura maior)
-
----
-
-## 🤝 Contribuindo
-
-1. Fork este repositório
-2. Crie sua feature branch: `git checkout -b minha-feature`
-3. Commit suas mudanças: `git commit -m 'feat: nova funcionalidade'`
-4. Push para a branch: `git push origin minha-feature`
-5. Abra um Pull Request 🦘
-
----
-
-## 📝 Licença
-
-Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais informações.
 
 ---
 
