@@ -1,6 +1,6 @@
 # 🛉 API de Usuários - Spring Boot
 
-API REST desenvolvida com **Spring Boot** para realizar operações CRUD em um sistema de usuários. Este projeto faz parte de uma arquitetura modular e visa demonstrar boas práticas com Java, Spring e Docker.
+API desenvolvida com **Spring Boot** para realizar operações de *criar* e *editar* um usuário em um sistema. Este projeto é feito com a idealização de microserviço e visa demonstrar boas práticas com Java, Spring e Docker.
 
 ---
 
@@ -44,7 +44,6 @@ apiUsuarios/
 
 - **Repository Pattern**: abstração de acesso a dados com Spring Data JPA.
 - **Service Layer**: encapsula a lógica de negócios.
-- **DTO Pattern** (sugestão futura): ideal para desacoplar entidades da API pública.
 
 ---
 
@@ -58,35 +57,25 @@ cd apiUsuarios
 docker-compose up --build
 ```
 
-A API estará disponível em: `http://localhost:8080`
-
-### ▶️ Manualmente (Java + Maven)
-
-```bash
-./mvnw spring-boot:run
-```
+A API estará disponível em: `http://localhost:8082`
 
 ---
 
 ## 📀 Endpoints Padrão
 
-| Método | Rota             | Ação                  |
-|--------|------------------|-----------------------|
-| GET    | `/usuarios`      | Lista todos os usuários |
-| GET    | `/usuarios/{id}` | Busca usuário por ID   |
-| POST   | `/usuarios`      | Cria um novo usuário   |
-| PUT    | `/usuarios/{id}` | Atualiza dados         |
-| DELETE | `/usuarios/{id}` | Remove um usuário      |
+| Método | Rota                  | Ação                  |
+|--------|-----------------------|-----------------------|
+| POST   | `/usuario/criar`      | Cria um novo usuário  |
+| POST   | `/usuario/autenticar` | Autentica um usuário  |
 
 ---
 
-## 🛠️ Futuras Melhorias
+## 🛠️ Recursos
 
 - ✅ Validação com `@Valid`
 - ✅ Paginação e filtros
-- ⏳ Segurança com JWT (Spring Security)
-- ⏳ Testes unitários com JUnit/Mockito
-- ⏳ Integração com API Gateway (em arquitetura maior)
+- ✅ Uso do JWT (Spring Security)
+- ✅ Testes unitários com JUnit
 
 ---
 
