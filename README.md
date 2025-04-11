@@ -1,6 +1,6 @@
 # 🛉 API de Usuários - Spring Boot
 
-API desenvolvida com **Spring Boot** para realizar operações de *criar* e *editar* um usuário em um sistema. Este projeto é feito com a idealização de microserviço e visa demonstrar boas práticas com Java, Spring e Docker.
+API desenvolvida com **Spring Boot** para realizar operações de **criar** e **autenticar** um usuário em um sistema. Este projeto é feito com a idealização de microserviço e visa demonstrar boas práticas com Java, Spring e Docker.
 
 ---
 
